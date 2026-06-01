@@ -1,0 +1,16 @@
+{
+  "buildCommand": "npm install -g react && npm install -g react-dom",
+  "outputDirectory": ".",
+  "framework": "react",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
